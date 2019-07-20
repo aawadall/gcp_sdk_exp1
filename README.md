@@ -43,15 +43,13 @@ gcloud compute firewall-rules delete allow-https --quiet
 gcloud compute firewall-rules create allow-http \
     --action allow \
     --rules tcp:80 \
-    --description = "Allow HTTP Traffic" \
-    --direction = IN \
-    --target-tags = http-server
+    --direction IN \
+    --target-tags http-server
 ```
 
 ```bash
 gcloud compute firewall-rules create allow-https \
     --allow tcp:443 \
-    --description = "Allow HTTPS Traffic" \
-    --direction = IN \
-    --target-tags = https-server
+    --direction IN \
+    --target-tags https-server
     ```    
