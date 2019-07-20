@@ -1,8 +1,10 @@
 # gcp_sdk_exp1
-Experimenting with GCP SDK
+Experimenting with GCP SDK follow along https://app.pluralsight.com/library/courses/gcp-fundamentals/ 
 
 ## Task
-_To create compute instance **bloghost** as a simple **LAMP** Server_
+1. Create compute instance **bloghost**
+1. Configure a simple **LAMP** Server
+1. 
 
 ### Step 1 - Create VM
 #### Delete existing VM with same name
@@ -29,17 +31,17 @@ gcloud compute instances add-tags bloghost \
 ### Step 2 - Setup Firewall Rules
 #### Delete Existing Rules 
 
-```
+```bash
 gcloud compute firewall-rules delete allow-http --quiet
 ```
 
-```
+```bash
 gcloud compute firewall-rules delete allow-https --quiet
 ```
 
 #### Cerate New Firewall Rules 
 
-```
+```bash
 gcloud compute firewall-rules create allow-http \
     --action allow \
     --rules tcp:80 \
