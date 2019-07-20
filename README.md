@@ -7,13 +7,13 @@ _To create compute instance **bloghost** as a simple **LAMP** Server_
 ### Step 1 - Create VM
 #### Delete existing VM with same name
 
-```shell
+```bash
 gcloud compute instances delete bloghost --quiet
 ```
 
 #### Create New Instance 
 
-```shell
+```bash
 gcloud compute instances create bloghost \
     --metadata-from-file startup-script=./lamp_startup.sh \
     --zone us-central1-a \
@@ -21,7 +21,7 @@ gcloud compute instances create bloghost \
 
 #### Set  HTTP(S) Tags
 
-```shell
+```
 gcloud compute instances add-tags bloghost \
     --tags http-server,https-server
 ```
@@ -29,11 +29,11 @@ gcloud compute instances add-tags bloghost \
 ### Step 2 - Setup Firewall Rules
 #### Delete Existing Rules 
 
-```shell
+```
 gcloud compute firewall-rules delete allow-http --quiet
 ```
 
-```shell
+```
 gcloud compute firewall-rules delete allow-https --quiet
 ```
 
