@@ -13,8 +13,9 @@ gcloud compute instances add-tags bloghost \
 # HTTP Firewall Rules 
 gcloud compute firewall-rules delete allow-http --quiet
 gcloud compute firewall-rules create allow-http \
-    --allow tcp:80 \
-    --description = Allow HTTP Traffic \
+    --action allow \
+    --rules tcp:80 \
+    --description = "Allow HTTP Traffic" \
     --direction = IN \
     --target-tags = http-server
 
@@ -22,6 +23,6 @@ gcloud compute firewall-rules create allow-http \
 gcloud compute firewall-rules delete allow-https --quiet
 gcloud compute firewall-rules create allow-https \
     --allow tcp:443 \
-    --description = Allow HTTPS Traffic \
+    --description = "Allow HTTPS Traffic" \
     --direction = IN \
     --target-tags = https-server
