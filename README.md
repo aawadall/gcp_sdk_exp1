@@ -2,6 +2,8 @@
 Experimenting with GCP SDK follow along https://app.pluralsight.com/library/courses/gcp-fundamentals/ 
 
 ## Task
+1. Create a new **Google Cloud Storage** Bucket
+1. Copy a picture to bucket
 1. Create compute instance **bloghost**
 1. Configure a simple **LAMP** Server
 1. 
