@@ -8,4 +8,4 @@ EXT_IP=` gcloud compute instances describe $VM_INSTANCE --zone=$ZONE| grep natIP
 echo "VM IP = [$EXT_IP]"
 
 # Authorize IP
-gcloud sql instances patch $INSTANCE_NAME --authorized-networks=$EXT_IP --quiet
+gcloud sql instances patch $INSTANCE_NAME --authorized-networks=$EXT_IP/32 --quiet
