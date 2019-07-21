@@ -6,7 +6,8 @@ Experimenting with GCP SDK follow along https://app.pluralsight.com/library/cour
 1. Copy a picture to bucket
 1. Create compute instance **bloghost**
 1. Configure a simple **LAMP** Server
-1. 
+1. Create SQL instance
+1. Setup user **blogdbuser**
 
 ### Step 1 - Create VM
 #### Delete existing VM with same name
@@ -25,13 +26,14 @@ gcloud compute instances create bloghost \
 
 #### Set  HTTP(S) Tags
 
-```
+```bash
 gcloud compute instances add-tags bloghost \
     --tags http-server,https-server
 ```
 
 ### Step 2 - Setup Firewall Rules
-#### Delete Existing Rules 
+
+#### Delete Existing Rules
 
 ```bash
 gcloud compute firewall-rules delete allow-http --quiet
@@ -41,7 +43,7 @@ gcloud compute firewall-rules delete allow-http --quiet
 gcloud compute firewall-rules delete allow-https --quiet
 ```
 
-#### Cerate New Firewall Rules 
+#### Cerate New Firewall Rules
 
 ```bash
 gcloud compute firewall-rules create allow-http \
@@ -56,4 +58,4 @@ gcloud compute firewall-rules create allow-https \
     --allow tcp:443 \
     --direction IN \
     --target-tags https-server
-    ```    
+```
