@@ -10,6 +10,21 @@ Experimenting with GCP SDK follow along https://app.pluralsight.com/library/cour
 1. Setup user **blogdbuser**
 1. Setup Firewall Rules 
 
+### Google Cloud Storage
+#### Create a new Google Cloud Storage Bucket
+#### Copy a picture to bucket
+
+### Compute VM
+#### Create Compute Instance
+#### Configure a simple **LAMP** Server
+
+### Google Cloud SQL
+#### Create SQL instance
+#### Setup user 
+#### Setup Firewall Rules 
+
+__TO REMOVE__ 
+
 ### Create VM
 #### Delete existing VM with same name
 
