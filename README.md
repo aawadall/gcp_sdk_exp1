@@ -8,8 +8,9 @@ Experimenting with GCP SDK follow along https://app.pluralsight.com/library/cour
 1. Configure a simple **LAMP** Server
 1. Create SQL instance
 1. Setup user **blogdbuser**
+1. Setup Firewall Rules 
 
-### Step 1 - Create VM
+### Create VM
 #### Delete existing VM with same name
 
 ```bash
