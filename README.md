@@ -12,16 +12,51 @@ Experimenting with GCP SDK follow along https://app.pluralsight.com/library/cour
 
 ### Google Cloud Storage
 #### Create a new Google Cloud Storage Bucket
+
+```
+add code here
+```
+
 #### Copy a picture to bucket
+
+```
+add code here
+```
+
 
 ### Compute VM
 #### Create Compute Instance
+
+```
+add code here
+```
+
 #### Configure a simple **LAMP** Server
+
+```
+add code here
+```
+
 
 ### Google Cloud SQL
 #### Create SQL instance
+
+```
+add code here
+```
+
 #### Setup user 
+
+```
+add code here
+```
+
 #### Setup Firewall Rules 
+
+```
+add code here
+```
+
 
 __TO REMOVE__ 
 
